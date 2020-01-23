@@ -29,17 +29,22 @@
             <p class="textNotif">Attiva notifiche desktop <i class="fas fa-chevron-right"></i></p>
           </div>
         </div>
-        <div class="srcBar"></div>
+        <div class="srcBar">
+          <div class="barItself">
+            <button id="srcButton" type="button" name="search"><i class="fas fa-search"></i></button>
+            <input id="FirstSrc"type="text" name="" value="" placeholder="Cerca o inizia una nuova chat">
+          </div>
+        </div>
         <div class="chats">
           <ul id="chatList">
-            <li class="c-l-e">Michele</li>
-            <li class="c-l-e">Fabio</li>
-            <li class="c-l-e">Samuele</li>
-            <li class="c-l-e">Alessandro B.</li>
-            <li class="c-l-e">Alessandro L.</li>
-            <li class="c-l-e">Claudia</li>
-            <li class="c-l-e">Davide</li>
-            <li class="c-l-e">Federico</li>
+            <li class="c-l-e"><div id="img1"class="imgProfiles"></div>Michele<p>prova</p></li>
+            <li class="c-l-e"><div id="img2"class="imgProfiles"></div>Fabio</li>
+            <li class="c-l-e"><div id="img3"class="imgProfiles"></div>Samuele</li>
+            <li class="c-l-e"><div id="img4"class="imgProfiles"></div>Alessandro B.</li>
+            <li class="c-l-e"><div id="img5"class="imgProfiles"></div>Alessandro L.</li>
+            <li class="c-l-e"><div id="img6"class="imgProfiles"></div>Claudia</li>
+            <li class="c-l-e"><div id="img7"class="imgProfiles"></div>Davide</li>
+            <li class="c-l-e"><div id="img8"class="imgProfiles"></div>Federico</li>
           </ul>
         </div>
       </section>
@@ -59,7 +64,10 @@
 
         </div>
         <div class="textZone">
-
+          <button id="emojiButton"type="button" name="emoji"><i class="far fa-laugh"></i></button>
+          <input id="textArea" type="text" name="Message" value="" placeholder="Scrivi un messaggio">
+          <button id="sendButton"type="button" hidden name="send"><i class="fas fa-paper-plane"></i></button>
+          <button id="audioButton"type="button" name="audio"><i class="fas fa-microphone"></i></button>
         </div>
       </section>
     </main>
