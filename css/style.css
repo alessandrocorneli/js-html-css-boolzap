@@ -4,10 +4,20 @@ body{
   min-width: 500px;
   margin: 0 auto;
   position: relative;
+  color: #4A5C62;
+}
+h3{
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: normal;
+}
+p{
+  margin: 0 auto;
+  font-size: 15px;
 }
 .gbar{
   width: 100%;
-  height: 100px;
+  height: 120px;
   background-color: #009588;
   position: fixed;
 }
@@ -20,8 +30,9 @@ body{
   width: 70%;
   left: 50%;
   margin-top: 40px;
-  height: 700px;
+  height: 800px;
   transform: translateX(-50%);
+  box-shadow: 3px 3px 15px 3px grey;
 }
 
 /* CONTACTS */
@@ -31,22 +42,55 @@ body{
   height: 100%;
 }
 .profile{
-  background-color: darkblue;
-  width: 100%;
-  height: 50px;
-}
-.notificationBox{
-  background-color: cyan;
+  border-bottom: 0.5px solid #CCCCCC;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #EDEDED;
   width: 100%;
   height: 60px;
 }
+.profilePic{
+  margin-left: 5px;
+  background-image: url("../img/avatar_io.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.profileButtons{
+  margin-right: 10px;
+}
+.notificationBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9DE1FE;
+  width: 100%;
+  height: 80px;
+}
+.fa-bell-slash{
+  margin-right: 15px;
+  font-size: 30px;
+  color: #F5FCFF;
+}
+.textNotif{
+  font-size: 13px;
+}
+.fa-chevron-right{
+  color: #4A5C62;
+}
 .srcBar{
-  background-color: grey;
+  background-color: #F8F8F8;
   width: 100%;
   height: 30px;
 }
 .chats{
+  min-height: 300px;
   width: 100%;
+  overflow-y: auto;
 }
 #chatList{
   margin: 0 auto;
@@ -56,28 +100,70 @@ body{
 }
 /* Chat-List-Elements */
 .c-l-e{
+  display: flex;
+  align-items: center;
+  height: 50px;
   padding: 5px 10px 5px 10px;
   background-color: white;
-  border-bottom: 1px solid grey;
+  border-bottom: 0.5px solid #DBDBDB;
 }
 /* /Chat-List-Elements */
 /* CONTACTS */
 
 /* CHAT */
 #chat{
-  position: relative;
-  background-color: orange;
+  background-image: url("../img/mine.jpg");
+  background-size: auto;
+  background-position: center;
   width: 70%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .chatProfile{
-  background-color: pink;
   width: 100%;
+  height: 60px;
+  border-left: 0.5px solid #CCCCCC;
+  border-bottom: 0.5px solid #CCCCCC;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  background-color: #EDEDED;
+}
+.picText{
+  display: inline-block;
+  width: 300px;
+}
+.picChatActive{
   height: 50px;
+  width: 50px;
+  margin: 5px;
+  background-image: url("../img/avatar_8.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.chatUtilityButtons{
+  width: 70px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  color: black;
+}
+.buttons{
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.0);
+  border: 0;
+  color: #80868A;
 }
 .textZone{
+  position: sticky;
   background-color: purple;
-  position: absolute;
   bottom: 0;
   width: 100%;
   height: 50px;
