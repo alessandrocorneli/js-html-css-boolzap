@@ -37,14 +37,62 @@
         </div>
         <div class="chats">
           <ul id="chatList">
-            <li class="c-l-e"><div id="img1"class="imgProfiles"></div>Michele<p>prova</p></li>
-            <li class="c-l-e"><div id="img2"class="imgProfiles"></div>Fabio</li>
-            <li class="c-l-e"><div id="img3"class="imgProfiles"></div>Samuele</li>
-            <li class="c-l-e"><div id="img4"class="imgProfiles"></div>Alessandro B.</li>
-            <li class="c-l-e"><div id="img5"class="imgProfiles"></div>Alessandro L.</li>
-            <li class="c-l-e"><div id="img6"class="imgProfiles"></div>Claudia</li>
-            <li class="c-l-e"><div id="img7"class="imgProfiles"></div>Davide</li>
-            <li class="c-l-e"><div id="img8"class="imgProfiles"></div>Federico</li>
+            <li class="c-l-e active">
+              <div id="img1"class="imgProfiles"></div>
+              <div class="c-l-e-text">
+                <h3 class="c-l-e-name">Michele</h3>
+                <small class="message-text"></small>
+              </div>
+            </li>
+            <li class="c-l-e">
+              <div id="img2"class="imgProfiles"></div>
+              <div class="c-l-e-text">
+                <h3 class="c-l-e-name">Fabio</h3>
+                <small class="message-text"></small>
+              </div>
+            </li>
+            <li class="c-l-e">
+              <div id="img3"class="imgProfiles"></div>
+              <div class="c-l-e-text">
+                <h3 class="c-l-e-name">Samuele</h3>
+                <small class="message-text"></small>
+              </div>
+            </li>
+            <li class="c-l-e">
+              <div id="img4"class="imgProfiles"></div>
+              <div class="c-l-e-text">
+                <h3 class="c-l-e-name">Alessandro B.</h3>
+                <small class="message-text"></small>
+              </div>
+            </li>
+            <li class="c-l-e">
+              <div id="img5"class="imgProfiles"></div>
+              <div class="c-l-e-text">
+                <h3 class="c-l-e-name">Alessandro L.</h3>
+                <small class="message-text"></small>
+              </div>
+            </li>
+            <li class="c-l-e">
+              <div id="img6"class="imgProfiles"></div>
+              <div class="c-l-e-text">
+                <h3 class="c-l-e-name">Claudia</h3>
+                <small class="message-text"></small>
+              </div>
+            </li>
+            <li class="c-l-e">
+              <div id="img7"class="imgProfiles"></div>
+              <div class="c-l-e-text">
+                <h3 class="c-l-e-name">Davide</h3>
+                <small class="message-text"></small>
+              </div>
+            </li>
+            <li class="c-l-e">
+              <div id="img8"class="imgProfiles"></div>
+              <div class="c-l-e-text">
+                <h3 class="c-l-e-name">Federico</h3>
+                <small class="message-text"></small>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -61,12 +109,22 @@
             <button class="buttons"type="button" name="append"><i class="fas fa-paperclip"></i></button>
             <button class="buttons"type="button" name="misc"><i class="fas fa-ellipsis-v"></i></button>
           </div>
-
         </div>
+
+        <div class="messageArea">
+          <div class="myMessage">
+            <p class="rigthMessage">ciao</p>
+            <small class="messageTime"></small>
+          </div>
+          <div class="otherMessage">
+            <p class="leftMessage">ciao</p>
+          </div>
+        </div>
+
         <div class="textZone">
           <button id="emojiButton"type="button" name="emoji"><i class="far fa-laugh"></i></button>
           <input id="textArea" type="text" name="Message" value="" placeholder="Scrivi un messaggio">
-          <button id="sendButton"type="button" hidden name="send"><i class="fas fa-paper-plane"></i></button>
+          <button id="sendButton"type="button" name="send" hidden><i class="fas fa-paper-plane"></i></button>
           <button id="audioButton"type="button" name="audio"><i class="fas fa-microphone"></i></button>
         </div>
       </section>

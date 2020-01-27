@@ -2,6 +2,7 @@ body{
   font-family: 'Ubuntu', sans-serif;
   background-color: #D6DAD8;
   min-width: 500px;
+  height: 100vh;
   margin: 0 auto;
   position: relative;
   color: #4A5C62;
@@ -29,7 +30,7 @@ p{
   width: 70%;
   left: 50%;
   margin-top: 40px;
-  height: 800px;
+  height: calc(100% - 70px);
   transform: translateX(-50%);
   box-shadow: 3px 3px 15px 3px grey;
 }
@@ -112,9 +113,9 @@ p{
 }
 /* /SEARCH BAR */
 .chats{
-  min-height: 300px;
+  height: calc( 100% - 200px);
   width: 100%;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 #chatList{
   margin: 0 auto;
@@ -163,6 +164,14 @@ p{
   background-color: #FFF;
   border-bottom: 0.5px solid #DBDBDB;
 }
+
+.c-l-e-text{
+  margin-left: 10px;
+  line-height: 15px;
+}
+.c-l-e-name{
+  font-weight: bold;
+}
 /* /Chat-List-Elements */
 /* CONTACTS */
 
@@ -175,7 +184,7 @@ p{
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .chatProfile{
   display: flex;
@@ -249,7 +258,38 @@ p{
 }
 #textArea{
   width: calc(100% - 100px);
+  outline: none;
   border: 0;
   border-radius: 20px;
   padding: 10px;
+}
+
+/* AREA MESSAGGI */
+
+.messageArea{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.myMessage{
+  display: flex;
+  align-self: flex-end;
+  margin: 5px;
+  margin-right: 20px;
+  padding: 10px;
+  max-width: 55%;
+  border-radius: 7px;
+  background-color: #DCF8C6;
+}
+.otherMessage{
+  display: flex;
+  align-self: flex-start;
+  margin: 5px;
+  margin-left: 20px;
+  padding: 10px;
+  max-width: 55%;
+  border-radius: 7px;
+  background-color: #FFFFFF;
 }
