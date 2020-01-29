@@ -32,7 +32,7 @@
         <div class="srcBar">
           <div class="barItself">
             <button id="srcButton" type="button" name="search"><i class="fas fa-search"></i></button>
-            <input id="FirstSrc"type="text" name="" value="" placeholder="Cerca o inizia una nuova chat">
+            <input id="ChatSrc"type="text" name="" value="" placeholder="Cerca o inizia una nuova chat">
           </div>
         </div>
         <div class="chats">
@@ -40,57 +40,97 @@
             <li class="c-l-e active">
               <div id="img1"class="imgProfiles"></div>
               <div class="c-l-e-text">
-                <h3 class="c-l-e-name">Michele</h3>
-                <small class="message-text"></small>
+                <div class="infoText">
+                  <h3 class="c-l-e-name">Michele</h3>
+                  <small class="chatListTime"></small>
+                </div>
+                <div class="downText">
+                  <small class="chatListText">prova</small>
+                </div>
               </div>
             </li>
             <li class="c-l-e">
               <div id="img2"class="imgProfiles"></div>
               <div class="c-l-e-text">
-                <h3 class="c-l-e-name">Fabio</h3>
-                <small class="message-text"></small>
+                <div class="infoText">
+                  <h3 class="c-l-e-name">Fabio</h3>
+                  <small class="chatListTime"></small>
+                </div>
+                <div class="downText">
+                  <small class="chatListText">prova</small>
+                </div>
               </div>
             </li>
             <li class="c-l-e">
               <div id="img3"class="imgProfiles"></div>
               <div class="c-l-e-text">
-                <h3 class="c-l-e-name">Samuele</h3>
-                <small class="message-text"></small>
+                <div class="infoText">
+                  <h3 class="c-l-e-name">Samuele</h3>
+                  <small class="chatListTime"></small>
+                </div>
+                <div class="downText">
+                  <small class="chatListText">prova</small>
+                </div>
               </div>
             </li>
             <li class="c-l-e">
               <div id="img4"class="imgProfiles"></div>
               <div class="c-l-e-text">
-                <h3 class="c-l-e-name">Alessandro B.</h3>
-                <small class="message-text"></small>
+                <div class="infoText">
+                  <h3 class="c-l-e-name">Alessandro B.</h3>
+                  <small class="chatListTime"></small>
+                </div>
+                <div class="downText">
+                  <small class="chatListText">prova</small>
+                </div>
               </div>
             </li>
             <li class="c-l-e">
               <div id="img5"class="imgProfiles"></div>
               <div class="c-l-e-text">
-                <h3 class="c-l-e-name">Alessandro L.</h3>
-                <small class="message-text"></small>
+                <div class="infoText">
+                  <h3 class="c-l-e-name">Alessandro L.</h3>
+                  <small class="chatListTime"></small>
+                </div>
+                <div class="downText">
+                  <small class="chatListText">prova</small>
+                </div>
               </div>
             </li>
             <li class="c-l-e">
               <div id="img6"class="imgProfiles"></div>
               <div class="c-l-e-text">
-                <h3 class="c-l-e-name">Claudia</h3>
-                <small class="message-text"></small>
+                <div class="infoText">
+                  <h3 class="c-l-e-name">Claudia</h3>
+                  <small class="chatListTime"></small>
+                </div>
+                <div class="downText">
+                  <small class="chatListText">prova</small>
+                </div>
               </div>
             </li>
             <li class="c-l-e">
               <div id="img7"class="imgProfiles"></div>
               <div class="c-l-e-text">
-                <h3 class="c-l-e-name">Davide</h3>
-                <small class="message-text"></small>
+                <div class="infoText">
+                  <h3 class="c-l-e-name">Davide</h3>
+                  <small class="chatListTime"></small>
+                </div>
+                <div class="downText">
+                  <small class="chatListText">prova</small>
+                </div>
               </div>
             </li>
             <li class="c-l-e">
               <div id="img8"class="imgProfiles"></div>
               <div class="c-l-e-text">
-                <h3 class="c-l-e-name">Federico</h3>
-                <small class="message-text"></small>
+                <div class="infoText">
+                  <h3 class="c-l-e-name">Federico</h3>
+                  <small class="chatListTime"></small>
+                </div>
+                <div class="downText">
+                  <small class="chatListText">prova</small>
+                </div>
               </div>
             </li>
           </ul>
@@ -111,18 +151,15 @@
           </div>
         </div>
 
-        <div class="messageArea">
-          <div class="myMessage">
-            <p class="rigthMessage">ciao</p>
-            <small class="messageTime"></small>
-          </div>
-          <div class="otherMessage">
-            <p class="leftMessage">ciao</p>
-          </div>
+        <div class="messageArea active">
+          <!-- AREA MESSAGGI -->
         </div>
 
         <div class="textZone">
-          <button id="emojiButton"type="button" name="emoji"><i class="far fa-laugh"></i></button>
+          <div class="infoTop">
+            <button id="emojiButton"type="button" name="emoji"><i class="far fa-laugh"></i></button>
+
+          </div>
           <input id="textArea" type="text" name="Message" value="" placeholder="Scrivi un messaggio">
           <button id="sendButton"type="button" name="send" hidden><i class="fas fa-paper-plane"></i></button>
           <button id="audioButton"type="button" name="audio"><i class="fas fa-microphone"></i></button>
@@ -130,7 +167,29 @@
       </section>
     </main>
 
+    <div class="template">
 
+      <div class="RightMessage">
+        <div class="messageTop">
+          <p class="mText">ciao</p>
+          <i class="fa fa-chevron-down f-right message-options"></i>
+        </div>
+        <div class="messageBottom">
+          <small class="messageTime"></small>
+        </div>
+      </div>
+
+      <div class="LeftMessage">
+        <div class="messageTop">
+          <p class="mText">ciao</p>
+          <i class="fa fa-chevron-down f-right message-options"></i>
+        </div>
+        <div class="messageBottom">
+          <small class="messageTime"></small>
+        </div>
+      </div>
+
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/script.js" charset="utf-8"></script>
